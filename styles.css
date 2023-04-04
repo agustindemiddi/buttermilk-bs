@@ -1,0 +1,41 @@
+html {
+  font-family: sans-serif;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+nav,
+footer {
+  font-family: 'Playfair Display', serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* =============== mono social icons font =============== */
+@font-face {
+  font-family: 'Mono Social Icons Font';
+  src: url('./assets/fonts/MonoSocialIconsFont-1.10.woff') format('truetype');
+}
+
+.symbol {
+  font-family: 'Mono Social Icons Font';
+}
+
+/* =============== custom =============== */
+a .symbol {
+  font-size: 1.75em;
+  margin: 0.25em;
+}
+/* =============== custom =============== */
+/* =============== mono social icons font =============== */
