@@ -1,7 +1,7 @@
-/* =============== general styles =============== */
+/* =============== general styles and helpers =============== */
 body {
   font-family: 'Roboto', sans-serif;
-  padding-top: 58px;
+  padding-top: 74px;
 }
 
 h1,
@@ -18,7 +18,20 @@ footer {
 a {
   text-decoration: none;
 }
-/* =============== general styles =============== */
+
+.hidden {
+  display: none;
+}
+
+.half-container {
+  width: 50%;
+}
+
+.scroll-helper {
+  position: relative;
+  top: -86px;
+}
+/* =============== general styles and helpers =============== */
 
 /* =============== page icons resources =============== */
 /* =============== casper icons font =============== */
@@ -59,6 +72,8 @@ a .symbol {
 /* =============== mono social icons font =============== */
 /* =============== page icons resources =============== */
 
+/* =============== page sections styles =============== */
+/* =============== <header> styles =============== */
 .hero {
   height: 100vh;
 
@@ -80,26 +95,10 @@ a .symbol {
   overflow: hidden;
 }
 
-.arrow-layout-helper {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100vh;
-}
-
-.scroll-down {
-  width: 48px;
-  height: 48px;
-  font-size: 48px;
-  margin-left: -14px;
-  color: rgba(255, 255, 255, 0.75);
-  transform: rotate(-90deg);
-  animation: bounce 4s 2s infinite;
-}
-
-.scroll-down:hover {
-  color: white;
-  animation: none;
+.hero img {
+  width: 600px;
+  opacity: 0.75;
+  /* z-index: 1; */
 }
 
 .page-title {
@@ -126,30 +125,59 @@ a .symbol {
   margin-top: 2px;
 }
 
-.hidden {
-  display: none;
-}
-
-.page-description {
+.brand-slogan {
   color: white;
   font-size: 1.5rem;
   font-weight: 300;
   font-style: italic;
 }
 
-.thumbnail {
+.arrow-layout-helper {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.scroll-down {
+  width: 48px;
+  height: 48px;
+  font-size: 48px;
+  margin-left: -14px;
+  color: rgba(255, 255, 255, 0.75);
+  transform: rotate(-90deg);
+  animation: bounce 4s 2s infinite;
+}
+
+.scroll-down:hover {
+  color: white;
+  animation: none;
+}
+/* =============== <header> styles =============== */
+
+/* =============== <main> styles =============== */
+main#content section h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  font-style: italic;
+}
+
+section#team article img.thumbnail {
   width: 24px;
   height: 24px;
 }
 
-time {
+section#team article a {
+  padding-left: 3px;
+  padding-right: 5px;
+}
+
+section#team article time {
   padding-left: 8px;
   border-left: 1px solid gray;
 }
-
-#top {
-  background: url(../img/top.png);
-}
+/* =============== <main> styles =============== */
+/* =============== page sections styles =============== */
 
 /* =============== animations =============== */
 /* =============== bounce .scroll-down in header =============== */

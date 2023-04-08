@@ -28,7 +28,12 @@
     <nav class="navbar navbar-dark navbar-expand-md fixed-top bg-dark">
       <div class="container">
         <a class="navbar-brand" href="#">
-          <img src="assets/img/logo.png" alt="Logo" width="100" height="25" />
+          <img
+            src="assets/img/isotype.png"
+            alt="Buttermilk Isotype"
+            width="auto"
+            height="48"
+          />
         </a>
 
         <button
@@ -52,10 +57,14 @@
               <a class="nav-link link-secondary" href="#">Collection</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-secondary" href="#team">About Us</a>
+              <a class="nav-link link-secondary" href="#scroll-team"
+                >About Us</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link link-secondary" href="#contact">Contact</a>
+              <a class="nav-link link-secondary" href="#scroll-contact"
+                >Contact</a
+              >
             </li>
           </ul>
 
@@ -76,12 +85,16 @@
       </div>
     </nav>
 
-    <header class="hero">
+    <header class="hero mb-5">
       <div class="arrow-layout-helper">
         <div
           class="container d-flex align-items-end justify-content-center h-100"
         >
-          <a href="#content" class="icon-arrow-left scroll-down mb-5">
+          <a
+            class="icon-arrow-left scroll-down mb-5"
+            href="#scroll-content"
+            data-offset="-100"
+          >
             <span class="hidden">Scroll Down</span>
           </a>
         </div>
@@ -89,7 +102,9 @@
 
       <div class="d-flex justify-content-center align-items-center h-100">
         <div>
-          <h1 class="text-center page-title">Summer '23 Collection</h1>
+          <!-- <h1 class="text-center page-title">Summer '23 Collection</h1> -->
+
+          <img src="assets/img/logo.png" alt="Buttermilk Logo" />
 
           <div class="d-flex justify-content-center my-4">
             <span class="mx-2 line"></span>
@@ -99,45 +114,50 @@
             <span class="mx-2 line"></span>
           </div>
 
-          <h2 class="text-center page-description">
+          <h2 class="text-center brand-slogan">
             Stylish garments for you and your mini
           </h2>
-
-          <div class="d-flex justify-content-center">
-            <button
-              type="button"
-              style="color: red; font-size: 3rem; z-index: 1"
-            >
-              CALL TO ACTION
-            </button>
-          </div>
         </div>
       </div>
     </header>
 
-    <main id="content">
-      <section id="brand">
-        <h2 class="text-center" style="color: red">
-          Buttermilk (PRESENTACIÓN de la ORGANIZACIÓN)
-        </h2>
+    <span class="scroll-helper" id="scroll-content"></span>
 
-        <div class="container">
+    <main id="content">
+      <section class="mb-5" id="brand">
+        <h2 class="text-center mb-4">What is Buttermilk?</h2>
+
+        <div class="container half-container">
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique
-            saepe esse enim aperiam minus ipsam in ducimus, veniam sequi
-            incidunt, reprehenderit quos ab facere eligendi magni quia, expedita
-            placeat nulla?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
+            aspernatur? Voluptatem ratione at deserunt possimus, nobis labore
+            facilis itaque ex quibusdam natus totam culpa a sit fugiat ipsum
+            accusantium magnam. Facilis earum in perspiciatis fuga tempora ad!
+            Deserunt quo dicta excepturi ea in, sint sed. Ducimus corporis quae
+            a aspernatur? Officia praesentium commodi, aperiam autem aspernatur
+            obcaecati quasi sed. Rem. Hic modi minima odio, temporibus totam
+            omnis beatae reiciendis officiis dignissimos. Consectetur illo
+            laudantium, ipsa laboriosam doloremque magni libero repudiandae
+            debitis autem unde, excepturi quae, vitae magnam! Quos, nesciunt
+            praesentium? Amet, et adipisci! Repellat iusto eveniet dolores unde
+            architecto tempora voluptate repudiandae error harum qui veniam
+            ipsam nostrum nisi doloremque, doloribus consequuntur eligendi est?
+            Illo dolorum minima temporibus harum nihil. Dolorem nesciunt neque
+            possimus aperiam repudiandae architecto esse culpa ratione corrupti
+            velit eligendi impedit non cupiditate nobis molestiae, voluptas
+            ipsam laudantium repellat nulla a officiis odit sint asperiores.
+            Dolores, animi.
           </p>
         </div>
       </section>
 
-      <section id="team">
-        <h2 class="text-center" style="color: red">
-          Our Team (PRESENTACIÓN PERSONAL)
-        </h2>
+      <span class="scroll-helper" id="scroll-team"></span>
+
+      <section class="mb-5" id="team">
+        <h2 class="text-center mb-4">Our Team</h2>
 
         <div class="container">
-          <div class="row">
+          <div class="row mb-4">
             <div class="col">
               <article class="border p-4">
                 <h3>Agustín Demiddi</h3>
@@ -164,16 +184,16 @@
                 <h3>Alfredo González</h3>
                 <p>
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veritatis distinctio quaerat accusamus culpa nulla esse
-                  incidunt commodi suscipit, doloremque praesentium natus, ad
-                  illo reiciendis laborum fuga nostrum obcaecati facilis nam.
+                  Dolore, sint pariatur. Repudiandae aliquam totam tenetur,
+                  cumque ad dolorum. Hic deleniti natus officiis consectetur
+                  quaerat ipsum quibusdam sint! Praesentium, molestias quos!
                 </p>
                 <img
                   class="thumbnail"
                   src="assets/img/default-avatar-he.jpg"
                   alt="Alfredo González thumbnail"
                 />
-                <a href="https://github.com/agustindemiddi" target="_blank"
+                <a href="" target="_blank"
                   >Fredy</a
                 >
                 <time datetime="2023-04-06">4 April 2023</time>
@@ -184,17 +204,17 @@
               <article class="border p-4">
                 <h3>Carolina Morales</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veritatis distinctio quaerat accusamus culpa nulla esse
-                  incidunt commodi suscipit, doloremque praesentium natus, ad
-                  illo reiciendis laborum fuga nostrum obcaecati facilis nam.
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
+                  reiciendis nemo ut molestiae consequuntur, atque doloribus
+                  harum distinctio corrupti dolorem magni? Laboriosam dolorem
+                  sunt nulla voluptatum non velit tenetur ea!
                 </p>
                 <img
                   class="thumbnail"
                   src="assets/img/default-avatar-she.jpg"
                   alt="Carolina Morales thumbnail"
                 />
-                <a href="https://github.com/agustindemiddi" target="_blank"
+                <a href="" target="_blank"
                   >Caro</a
                 >
                 <time datetime="2023-04-06">4 April 2023</time>
@@ -207,17 +227,17 @@
               <article class="border p-4">
                 <h3>Emilia Saleme</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veritatis distinctio quaerat accusamus culpa nulla esse
-                  incidunt commodi suscipit, doloremque praesentium natus, ad
-                  illo reiciendis laborum fuga nostrum obcaecati facilis nam.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Expedita corrupti, necessitatibus non dolore exercitationem
+                  ex. Id voluptatem est nesciunt, eos error reiciendis illo
+                  dolore accusamus asperiores natus esse quis neque.
                 </p>
                 <img
                   class="thumbnail"
                   src="assets/img/default-avatar-she.jpg"
                   alt="Emilia Saleme thumbnail"
                 />
-                <a href="https://github.com/agustindemiddi" target="_blank"
+                <a href="" target="_blank"
                   >Emi</a
                 >
                 <time datetime="2023-04-06">4 April 2023</time>
@@ -228,17 +248,17 @@
               <article class="border p-4">
                 <h3>Leonardo Chirino</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veritatis distinctio quaerat accusamus culpa nulla esse
-                  incidunt commodi suscipit, doloremque praesentium natus, ad
-                  illo reiciendis laborum fuga nostrum obcaecati facilis nam.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Ipsam, dolores corporis laborum reprehenderit eos quas
+                  doloribus ducimus quisquam voluptates dolor beatae ea! Non
+                  aliquid nesciunt corporis similique sit cum in.
                 </p>
                 <img
                   class="thumbnail"
                   src="assets/img/default-avatar-he.jpg"
                   alt="Leonardo Chirino thumbnail"
                 />
-                <a href="https://github.com/agustindemiddi" target="_blank"
+                <a href="" target="_blank"
                   >Leo</a
                 >
                 <time datetime="2023-04-06">4 April 2023</time>
@@ -249,17 +269,16 @@
               <article class="border p-4">
                 <h3>Denise Frutos</h3>
                 <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Veritatis distinctio quaerat accusamus culpa nulla esse
-                  incidunt commodi suscipit, doloremque praesentium natus, ad
-                  illo reiciendis laborum fuga nostrum obcaecati facilis nam.
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Ullam ipsam officia saepe mollitia repudiandae consequuntur,
+                  tenetur assumenda nesciunt! Sed, architecto.
                 </p>
                 <img
                   class="thumbnail"
                   src="assets/img/default-avatar-she.jpg"
                   alt="Denise Frutos thumbnail"
                 />
-                <a href="https://github.com/agustindemiddi" target="_blank"
+                <a href="" target="_blank"
                   >Deni</a
                 >
                 <time datetime="2023-04-06">4 April 2023</time>
@@ -269,19 +288,23 @@
         </div>
       </section>
 
-      <section id="contact">
-        <h2 class="text-center" style="color: red">Contact us</h2>
+      <span class="scroll-helper" id="scroll-contact"></span>
 
-        <div class="container">
+      <section class="mb-5" id="contact">
+        <h2 class="text-center mb-4">Contact us</h2>
+
+        <div class="container half-container">
           <form id="wizard-form">
-            <fieldset>
+            <fieldset class="mb-3">
               <legend>Your name:</legend>
               <input type="text" name="name" />
               <br /><br />
-              <button class="next-btn" type="button">Next</button>
+              <button class="btn btn-secondary next-btn" type="button">
+                Next
+              </button>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="mb-3">
               <legend>Contact reason:</legend>
               <label>
                 <input type="radio" name="reason" value="query" />
@@ -296,19 +319,27 @@
                 Claim
               </label>
               <br /><br />
-              <button class="prev-btn" type="button">Previous</button>
-              <button class="next-btn" type="button">Next</button>
+              <button class="btn btn-secondary prev-btn" type="button">
+                Previous
+              </button>
+              <button class="btn btn-secondary next-btn" type="button">
+                Next
+              </button>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="mb-3">
               <legend>Your message:</legend>
               <textarea name="message" cols="50" rows="5"></textarea>
               <br /><br />
-              <button class="prev-btn" type="button">Previous</button>
-              <button class="next-btn" type="button">Next</button>
+              <button class="btn btn-secondary prev-btn" type="button">
+                Previous
+              </button>
+              <button class="btn btn-secondary next-btn" type="button">
+                Next
+              </button>
             </fieldset>
 
-            <fieldset>
+            <fieldset class="mb-3">
               <legend>Your e-mail:</legend>
               <input type="email" name="email" />
               <br />
@@ -317,17 +348,19 @@
                 I want to receive discounts and offers in my email box!
               </label>
               <br /><br />
-              <button class="prev-btn" type="button">Previous</button>
-              <button type="submit">Submit</button>
+              <button class="btn btn-secondary prev-btn" type="button">
+                Previous
+              </button>
+              <button type="submit" class="btn btn-secondary">Submit</button>
             </fieldset>
           </form>
         </div>
       </section>
 
-      <section id="summary">
-        <h2 class="text-center" style="color: red">Summary</h2>
+      <section class="mb-5" id="summary">
+        <h2 class="text-center mb-4">Summary</h2>
 
-        <div class="container" id="summary-form">
+        <div class="container half-container" id="summary-form">
           <p><strong>Contact reason:</strong> <span id="reason-span"></span></p>
           <p><strong>Name:</strong> <span id="name-span"></span></p>
           <p><strong>E-Mail:</strong> <span id="email-span"></span></p>
@@ -335,19 +368,23 @@
             <em><span id="marketing-span"></span></em>
           </p>
           <p><strong>Message:</strong> <span id="message-span"></span></p>
-          <button id="print-button" type="button" onclick="generatePDF()">
+          <button
+            type="button"
+            class="btn btn-sm btn-outline-secondary mt-3"
+            id="print-button"
+            onclick="generatePDF()"
+          >
             Print
           </button>
         </div>
       </section>
     </main>
 
-    <footer class="bg-dark text-secondary">
+    <footer class="bg-dark text-secondary py-3">
       <div class="text-center">
         <a href="#" class="d-block">
           <img src="assets/img/top.png" alt="Arrow up to top page" />
         </a>
-        <!-- <a href="https://github.com/agustindemiddi" target="_blank">Agustín Demiddi</a> -->
         Buttermilk
         <br />
         &copy; 2023
