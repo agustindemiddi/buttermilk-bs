@@ -149,7 +149,7 @@ a .symbol {
   margin-left: -14px;
   color: rgba(255, 255, 255, 0.75);
   transform: rotate(-90deg);
-  animation: bounce 4s 2s infinite;
+  animation: bounce 3s 2s infinite;
 }
 
 .scroll-down:hover {
@@ -165,17 +165,21 @@ main#content section h2 {
   font-style: italic;
 }
 
-section#team article img.thumbnail {
+main#content section#brand div p {
+  text-align: justify;
+}
+
+main#content section#team article img.thumbnail {
   width: 24px;
   height: 24px;
 }
 
-section#team article a {
+main#content section#team article a {
   padding-left: 3px;
   padding-right: 5px;
 }
 
-section#team article time {
+main#content section#team article time {
   padding-left: 8px;
   border-left: 1px solid gray;
 }
