@@ -1,7 +1,7 @@
 // get form element, all fieldset elements, form summary div element and spans
-const form = document.getElementById('wizard-form');
+const form = document.querySelector('#wizard-form');
 const fieldsets = form.querySelectorAll('fieldset');
-const summary = document.getElementById('summary-form');
+const summary = document.querySelector('#summary-form');
 
 const reasonSpan = document.getElementById('reason-span');
 const nameSpan = document.getElementById('name-span');
@@ -55,17 +55,6 @@ function prevStep(event) {
   }
 }
 
-// function to generate PDF
-// function generatePDF() {
-//   html2canvas(document.querySelector('#form-summary')).then(function (canvas) {
-//     var pdf = new jsPDF('p', 'pt', [canvas.width, canvas.height]);
-
-//     var imgData = canvas.toDataURL('image/png');
-//     pdf.addImage(imgData, 'PNG', 0, 0, canvas.width, canvas.height);
-//     pdf.save('form.pdf');
-//   });
-// }
-
 // function to submit form
 function submitForm(event) {
   event.preventDefault();
@@ -103,15 +92,8 @@ function submitForm(event) {
   form.email[0].value = '';
   form.email[1].checked = false;
 
-  console.log('submitted!');
-
   fieldsets[0].style.display = 'block';
   for (let i = 1; i < fieldsets.length; i++) {
     fieldsets[i].style.display = 'none';
   }
-
-  // generatePDF();
-
-  //  window.location.replace('index.html');
-  //   window.location.href = 'index.html';
 }
