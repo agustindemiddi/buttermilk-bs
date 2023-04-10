@@ -31,6 +31,10 @@ a {
   position: relative;
   top: -86px;
 }
+
+#summary {
+  display: none;
+}
 /* =============== general styles and helpers =============== */
 
 /* =============== page icons resources =============== */

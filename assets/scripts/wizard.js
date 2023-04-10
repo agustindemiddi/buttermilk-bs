@@ -1,19 +1,17 @@
-// get form element, all fieldset elements, form summary div element and spans
+// get form element, all fieldset elements and spans
 const form = document.querySelector('#wizard-form');
 const fieldsets = form.querySelectorAll('fieldset');
-const summary = document.querySelector('#summary-form');
 
-const reasonSpan = document.getElementById('reason-span');
-const nameSpan = document.getElementById('name-span');
-const emailSpan = document.getElementById('email-span');
-const messageSpan = document.getElementById('message-span');
-const marketingSpan = document.getElementById('marketing-span');
+const reasonSpan = document.querySelector('#reason-span');
+const nameSpan = document.querySelector('#name-span');
+const emailSpan = document.querySelector('#email-span');
+const messageSpan = document.querySelector('#message-span');
+const marketingSpan = document.querySelector('#marketing-span');
 
-// hide summary and all fieldsets except the first one
+// hide all fieldsets except the first one
 for (let i = 1; i < fieldsets.length; i++) {
   fieldsets[0].style.display = 'block';
   fieldsets[i].style.display = 'none';
-  summary.style.display = 'none';
 }
 
 // add event listeners to next and previous buttons
@@ -76,7 +74,7 @@ function submitForm(event) {
     reasonSpanInnerTextHelper = 'Claim';
   }
 
-  summary.style.display = 'block';
+  document.querySelector('#summary').style.display = 'block';
 
   reasonSpan.innerText = reasonSpanInnerTextHelper;
   nameSpan.innerText = clientData.name;

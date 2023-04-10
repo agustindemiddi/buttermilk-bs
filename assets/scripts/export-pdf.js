@@ -17,7 +17,7 @@ async function generatePDF() {
   // hide button
   printButton.style.display = 'none';
 
-  html2canvas(document.querySelector('#summary-form'), {
+  html2canvas(document.querySelector('#form-summary'), {
     canvas: canvas,
     backgroundColor: null,
   }).then(function (canvas) {
