@@ -11,6 +11,7 @@ h4,
 h5,
 h6,
 nav,
+legend,
 footer {
   font-family: 'Playfair Display', serif;
 }
@@ -33,7 +34,8 @@ a {
 }
 
 #summary {
-  display: none;
+  /* display: none; */
+  display: block;
 }
 /* =============== general styles and helpers =============== */
 
@@ -159,29 +161,60 @@ a .symbol {
 /* =============== <header> styles =============== */
 
 /* =============== <main> styles =============== */
-main#content section h2 {
+#content section h2 {
   font-size: 3rem;
   font-weight: 700;
   font-style: italic;
 }
 
-main#content section#brand div p {
+#content #brand div p {
   text-align: justify;
 }
 
-main#content section#team article img.thumbnail {
+#content #team article img.thumbnail {
   width: 24px;
   height: 24px;
 }
 
-main#content section#team article a {
+#content #team article a {
   padding-left: 3px;
   padding-right: 5px;
 }
 
-main#content section#team article time {
+#content #team article time {
   padding-left: 8px;
   border-left: 1px solid gray;
+}
+
+#content #contact {
+  height: 85vh;
+}
+
+#content #contact .section-title {
+  height: 20vh;
+}
+
+#content #contact #wizard-form fieldset {
+  height: 60vh;
+}
+
+#content #contact #wizard-form legend {
+  font-style: italic;
+}
+
+#content #contact #wizard-form .fieldset-legend,
+#content #contact #wizard-form .form-actions {
+  height: 15vh;
+}
+
+#content #contact #wizard-form .form-input-data {
+  height: 30vh;
+  border: 1px dashed rgba(128, 128, 128, 0.25);
+  border-radius: 10px;
+}
+
+#content #contact #wizard-form .form-input-data .radio-options {
+  font-size: 1.5em;
 }
 /* =============== <main> styles =============== */
 /* =============== page sections styles =============== */
