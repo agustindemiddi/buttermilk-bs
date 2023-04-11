@@ -94,4 +94,6 @@ function submitForm(event) {
   for (let i = 1; i < fieldsets.length; i++) {
     fieldsets[i].style.display = 'none';
   }
+
+  window.location.href = '#summary';
 }
