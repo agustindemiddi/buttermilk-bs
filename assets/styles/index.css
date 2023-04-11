@@ -36,6 +36,11 @@ a {
 #summary {
   display: none;
 }
+
+input.is-invalid,
+textarea.is-invalid {
+  border-color: red;
+}
 /* =============== general styles and helpers =============== */
 
 /* =============== page icons resources =============== */

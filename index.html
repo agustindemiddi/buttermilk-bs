@@ -316,7 +316,12 @@
               <div
                 class="d-flex justify-content-center align-items-center form-input-data"
               >
-                <input class="form-control w-75" type="text" name="name" />
+                <input
+                  class="form-control w-75"
+                  type="text"
+                  name="name"
+                  required
+                />
               </div>
               <div class="container form-actions">
                 <div class="row align-items-center h-100">
@@ -346,7 +351,8 @@
                       type="radio"
                       name="reason"
                       id="query"
-                      value="query"
+                      required
+                      checked
                     />
                     <label class="form-check-label" for="query">
                       Query or suggestion
@@ -358,7 +364,7 @@
                       type="radio"
                       name="reason"
                       id="quotation"
-                      value="quotation"
+                      required
                     />
                     <label class="form-check-label" for="quotation">
                       Quotation
@@ -370,7 +376,7 @@
                       type="radio"
                       name="reason"
                       id="claim"
-                      value="claim"
+                      required
                     />
                     <label class="form-check-label" for="claim"> Claim </label>
                   </div>
@@ -408,6 +414,7 @@
                   class="form-control w-75"
                   name="message"
                   rows="5"
+                  required
                 ></textarea>
               </div>
               <div class="container form-actions">
@@ -442,6 +449,7 @@
                   class="form-control w-75 mb-3"
                   type="email"
                   name="email"
+                  required
                 />
                 <div class="form-check">
                   <input
@@ -467,7 +475,7 @@
                     </button>
                   </div>
                   <div class="col-6">
-                    <button type="submit" class="btn btn-secondary w-100">
+                    <button type="submit" class="btn btn-success w-100">
                       Submit
                     </button>
                   </div>
@@ -494,7 +502,7 @@
             class="btn btn-sm btn-outline-secondary mt-3"
             id="print-button"
           >
-            Print
+            Save PDF
           </button>
         </div>
       </section>
@@ -540,13 +548,13 @@
       referrerpolicy="no-referrer"
     ></script>
 
+    <!-- fetch image script -->
+    <script src="assets/scripts/fetch-image.js"></script>
+
     <!-- wizard form script -->
     <script src="assets/scripts/wizard.js"></script>
 
     <!-- export PDF script -->
     <script src="assets/scripts/export-pdf.js"></script>
-
-    <!-- fetch image script -->
-    <script src="assets/scripts/fetch-image.js"></script>
   </body>
 </html>

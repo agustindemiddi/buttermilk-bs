@@ -1,6 +1,9 @@
-// get form element, all fieldset elements and spans
+// get form, fieldsets, buttons and spans
 const form = document.querySelector('#wizard-form');
 const fieldsets = form.querySelectorAll('fieldset');
+
+const nextBtns = form.querySelectorAll('.next-btn');
+const prevBtns = form.querySelectorAll('.prev-btn');
 
 const reasonSpan = document.querySelector('#reason-span');
 const nameSpan = document.querySelector('#name-span');
@@ -8,16 +11,7 @@ const emailSpan = document.querySelector('#email-span');
 const messageSpan = document.querySelector('#message-span');
 const marketingSpan = document.querySelector('#marketing-span');
 
-// hide all fieldsets except the first one
-for (let i = 1; i < fieldsets.length; i++) {
-  fieldsets[0].style.display = 'block';
-  fieldsets[i].style.display = 'none';
-}
-
 // add event listeners to next and previous buttons
-const nextBtns = form.querySelectorAll('.next-btn');
-const prevBtns = form.querySelectorAll('.prev-btn');
-
 for (let i = 0; i < nextBtns.length; i++) {
   nextBtns[i].addEventListener('click', nextStep);
 }
@@ -26,32 +20,66 @@ for (let i = 0; i < prevBtns.length; i++) {
   prevBtns[i].addEventListener('click', prevStep);
 }
 
-// add event listener to form
-form.addEventListener('submit', submitForm);
+// hide all fieldsets except the first one
+for (let i = 1; i < fieldsets.length; i++) {
+  fieldsets[0].style.display = 'block';
+  fieldsets[i].style.display = 'none';
+}
 
-// function to go to next step
-function nextStep(event) {
-  event.preventDefault();
+function getCurrentFieldset() {
   for (let i = 0; i < fieldsets.length; i++) {
     if (fieldsets[i].style.display === 'block') {
-      fieldsets[i].style.display = 'none';
-      fieldsets[i + 1].style.display = 'block';
-      break;
+      return fieldsets[i];
     }
   }
 }
 
-// function to go to previous step
-function prevStep(event) {
+function nextStep(event) {
   event.preventDefault();
-  for (let i = 0; i < fieldsets.length; i++) {
-    if (fieldsets[i].style.display == 'block') {
-      fieldsets[i].style.display = 'none';
-      fieldsets[i - 1].style.display = 'block';
-      break;
+  let currentFieldset = getCurrentFieldset();
+
+  // validate inputs
+  let isValid = true;
+  let inputs = currentFieldset.querySelectorAll('input,textarea');
+  for (let i = 0; i < inputs.length; i++) {
+    if (inputs[i].hasAttribute('required') && !inputs[i].value) {
+      isValid = false;
+      inputs[i].classList.add('is-invalid');
+    } else {
+      inputs[i].classList.remove('is-invalid');
     }
   }
+
+  if (isValid) {
+    currentFieldset.style.display = 'none';
+    currentFieldset.nextElementSibling.style.display = 'block';
+  }
 }
+
+function prevStep(event) {
+  event.preventDefault();
+  let currentFieldset = getCurrentFieldset();
+
+  // validate inputs
+  let isValid = true;
+  let inputs = currentFieldset.querySelectorAll('input,textarea');
+  for (let i = 0; i < inputs.length; i++) {
+    if (inputs[i].hasAttribute('required') && !inputs[i].value) {
+      isValid = false;
+      inputs[i].classList.add('is-invalid');
+    } else {
+      inputs[i].classList.remove('is-invalid');
+    }
+  }
+
+  if (isValid) {
+    currentFieldset.style.display = 'none';
+    currentFieldset.previousElementSibling.style.display = 'block';
+  }
+}
+
+// add event listener to form
+form.addEventListener('submit', submitForm);
 
 // function to submit form
 function submitForm(event) {
