@@ -224,6 +224,11 @@ a .symbol {
   height: 30vh;
   border: 1px dashed rgba(128, 128, 128, 0.25);
   border-radius: 10px;
+  background-image: url('../img/bg-pattern.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 
 #content #contact #wizard-form .form-input-data .radio-options {
