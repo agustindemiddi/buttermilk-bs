@@ -225,8 +225,16 @@ a .symbol {
   padding: 0;
 }
 
-#content #team article time {
+/* #content #team article time {
   padding-left: 8px;
+  border-left: 1px solid gray;
+} */
+
+#content #team article > footer > span {
+  color: rgb(128, 128, 128);
+  font-size: 0.9rem;
+  font-style: italic;
+  padding-left: 10px;
   border-left: 1px solid gray;
 }
 
