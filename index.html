@@ -90,7 +90,7 @@
       </div>
     </nav>
 
-    <header class="hero mb-5">
+    <header class="mb-5 hero">
       <div class="arrow-layout-helper">
         <div
           class="container d-flex align-items-end justify-content-center h-100"
@@ -107,7 +107,11 @@
 
       <div class="d-flex justify-content-center align-items-center h-100">
         <div>
-          <img src="assets/img/logo.png" alt="Buttermilk Logo" />
+          <img
+            class="img-fluid logo"
+            src="assets/img/logo.png"
+            alt="Buttermilk Logo"
+          />
 
           <div class="d-flex justify-content-center my-4">
             <span class="mx-2 line"></span>
@@ -128,9 +132,13 @@
 
     <main id="content">
       <section class="mb-5" id="brand">
-        <h2 class="text-center mb-4">What is Buttermilk?</h2>
+        <div
+          class="d-flex justify-content-center align-items-center section-title"
+        >
+          <h2 class="text-center">What is Buttermilk?</h2>
+        </div>
 
-        <div class="container half-container">
+        <div class="container reduce-container">
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci,
             aspernatur? Voluptatem ratione at deserunt possimus, nobis labore
@@ -174,124 +182,138 @@
       <span class="scroll-helper" id="scroll-team"></span>
 
       <section class="mb-5" id="team">
-        <h2 class="text-center mb-4">Our Team</h2>
+        <div
+          class="d-flex justify-content-center align-items-center section-title"
+        >
+          <h2 class="text-center">Our Team</h2>
+        </div>
 
-        <div class="container">
-          <div class="row mb-4">
-            <div class="col">
-              <article class="border p-4">
+        <div class="container-md">
+          <div class="row mb-3 mb-sm-4 mx-1 mx-md-auto">
+            <div class="col-xs col-sm-6 col-lg-4 mb-4">
+              <article class="d-flex flex-column h-100 border p-4">
                 <h3>Agustín Demiddi</h3>
-                <p>
+                <p class="flex-grow-1">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Veritatis distinctio quaerat accusamus culpa nulla esse
                   incidunt commodi suscipit, doloremque praesentium natus, ad
                   illo reiciendis laborum fuga nostrum obcaecati facilis nam.
                 </p>
-                <img
-                  class="thumbnail"
-                  src="assets/img/default-avatar-he.jpg"
-                  alt="Agustín Demiddi thumbnail"
-                />
-                <a href="https://github.com/agustindemiddi" target="_blank"
-                  >Agustín</a
-                >
-                <time datetime="2023-04-06">4 April 2023</time>
+                <footer>
+                  <img
+                    class="thumbnail"
+                    src="assets/img/default-avatar-he.jpg"
+                    alt="Agustín Demiddi thumbnail"
+                  />
+                  <a href="https://github.com/agustindemiddi" target="_blank"
+                    >Agustín</a
+                  >
+                  <time datetime="2023-04-06">4 April 2023</time>
+                </footer>
               </article>
             </div>
 
-            <div class="col">
-              <article class="border p-4">
+            <div class="col-xs col-sm-6 col-lg-4 mb-4">
+              <article class="d-flex flex-column h-100 border p-4">
                 <h3>Alfredo González</h3>
-                <p>
+                <p class="flex-grow-1">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit.
                   Dolore, sint pariatur. Repudiandae aliquam totam tenetur,
                   cumque ad dolorum. Hic deleniti natus officiis consectetur
                   quaerat ipsum quibusdam sint! Praesentium, molestias quos!
                 </p>
-                <img
-                  class="thumbnail"
-                  src="assets/img/default-avatar-he.jpg"
-                  alt="Alfredo González thumbnail"
-                />
-                <a href="" target="_blank">Fredy</a>
-                <time datetime="2023-04-06">4 April 2023</time>
+                <footer>
+                  <img
+                    class="thumbnail"
+                    src="assets/img/default-avatar-he.jpg"
+                    alt="Alfredo González thumbnail"
+                  />
+                  <a href="" target="_blank">Fredy</a>
+                  <time datetime="2023-04-06">4 April 2023</time>
+                </footer>
               </article>
             </div>
 
-            <div class="col">
-              <article class="border p-4">
+            <div class="col-xs col-sm-6 col-lg-4 mb-4">
+              <article class="d-flex flex-column h-100 border p-4">
                 <h3>Carolina Morales</h3>
-                <p>
+                <p class="flex-grow-1">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit. At
                   reiciendis nemo ut molestiae consequuntur, atque doloribus
                   harum distinctio corrupti dolorem magni? Laboriosam dolorem
                   sunt nulla voluptatum non velit tenetur ea!
                 </p>
-                <img
-                  class="thumbnail"
-                  src="assets/img/default-avatar-she.jpg"
-                  alt="Carolina Morales thumbnail"
-                />
-                <a href="" target="_blank">Caro</a>
-                <time datetime="2023-04-06">4 April 2023</time>
+                <footer>
+                  <img
+                    class="thumbnail"
+                    src="assets/img/default-avatar-she.jpg"
+                    alt="Carolina Morales thumbnail"
+                  />
+                  <a href="" target="_blank">Caro</a>
+                  <time datetime="2023-04-06">4 April 2023</time>
+                </footer>
               </article>
             </div>
-          </div>
 
-          <div class="row">
-            <div class="col">
-              <article class="border p-4">
+            <div class="col-xs col-sm-6 col-lg-4 mb-4">
+              <article class="d-flex flex-column h-100 border p-4">
                 <h3>Emilia Saleme</h3>
-                <p>
+                <p class="flex-grow-1">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Expedita corrupti, necessitatibus non dolore exercitationem
                   ex. Id voluptatem est nesciunt, eos error reiciendis illo
                   dolore accusamus asperiores natus esse quis neque.
                 </p>
-                <img
-                  class="thumbnail"
-                  src="assets/img/default-avatar-she.jpg"
-                  alt="Emilia Saleme thumbnail"
-                />
-                <a href="" target="_blank">Emi</a>
-                <time datetime="2023-04-06">4 April 2023</time>
+                <footer>
+                  <img
+                    class="thumbnail"
+                    src="assets/img/default-avatar-she.jpg"
+                    alt="Emilia Saleme thumbnail"
+                  />
+                  <a href="" target="_blank">Emi</a>
+                  <time datetime="2023-04-06">4 April 2023</time>
+                </footer>
               </article>
             </div>
 
-            <div class="col">
-              <article class="border p-4">
+            <div class="col-xs col-sm-6 col-lg-4 mb-4">
+              <article class="d-flex flex-column h-100 border p-4">
                 <h3>Leonardo Chirino</h3>
-                <p>
+                <p class="flex-grow-1">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                   Ipsam, dolores corporis laborum reprehenderit eos quas
                   doloribus ducimus quisquam voluptates dolor beatae ea! Non
                   aliquid nesciunt corporis similique sit cum in.
                 </p>
-                <img
-                  class="thumbnail"
-                  src="assets/img/default-avatar-he.jpg"
-                  alt="Leonardo Chirino thumbnail"
-                />
-                <a href="" target="_blank">Leo</a>
-                <time datetime="2023-04-06">4 April 2023</time>
+                <footer>
+                  <img
+                    class="thumbnail"
+                    src="assets/img/default-avatar-he.jpg"
+                    alt="Leonardo Chirino thumbnail"
+                  />
+                  <a href="" target="_blank">Leo</a>
+                  <time datetime="2023-04-06">4 April 2023</time>
+                </footer>
               </article>
             </div>
 
-            <div class="col">
-              <article class="border p-4">
+            <div class="col-xs col-sm-6 col-lg-4 mb-4">
+              <article class="d-flex flex-column h-100 border p-4">
                 <h3>Denise Frutos</h3>
-                <p>
+                <p class="flex-grow-1">
                   Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                   Ullam ipsam officia saepe mollitia repudiandae consequuntur,
                   tenetur assumenda nesciunt! Sed, architecto.
                 </p>
-                <img
-                  class="thumbnail"
-                  src="assets/img/default-avatar-she.jpg"
-                  alt="Denise Frutos thumbnail"
-                />
-                <a href="" target="_blank">Deni</a>
-                <time datetime="2023-04-06">4 April 2023</time>
+                <footer>
+                  <img
+                    class="thumbnail"
+                    src="assets/img/default-avatar-she.jpg"
+                    alt="Denise Frutos thumbnail"
+                  />
+                  <a href="" target="_blank">Deni</a>
+                  <time datetime="2023-04-06">4 April 2023</time>
+                </footer>
               </article>
             </div>
           </div>
@@ -307,7 +329,7 @@
           <h2 class="text-center">Contact us</h2>
         </div>
 
-        <div class="container half-container text-center bg-contact">
+        <div class="container reduce-container text-center">
           <form id="wizard-form">
             <fieldset class="mb-3">
               <div class="d-flex align-items-end fieldset-legend">
@@ -323,17 +345,17 @@
                   required
                 />
               </div>
-              <div class="container form-actions">
-                <div class="row align-items-center h-100">
-                  <div class="col-6"></div>
-                  <div class="col-6">
-                    <button
-                      class="btn btn-secondary w-100 next-btn"
-                      type="button"
-                    >
-                      Next
-                    </button>
-                  </div>
+              <div
+                class="row justify-content-center align-items-center form-actions"
+              >
+                <div class="col-6"></div>
+                <div class="col-6">
+                  <button
+                    class="btn btn-secondary w-100 next-btn"
+                    type="button"
+                  >
+                    Next
+                  </button>
                 </div>
               </div>
             </fieldset>
@@ -382,24 +404,24 @@
                   </div>
                 </div>
               </div>
-              <div class="container form-actions">
-                <div class="row align-items-center h-100">
-                  <div class="col-6">
-                    <button
-                      class="btn btn-secondary w-100 prev-btn"
-                      type="button"
-                    >
-                      Previous
-                    </button>
-                  </div>
-                  <div class="col-6">
-                    <button
-                      class="btn btn-secondary w-100 next-btn"
-                      type="button"
-                    >
-                      Next
-                    </button>
-                  </div>
+              <div
+                class="row justify-content-center align-items-center form-actions"
+              >
+                <div class="col-6">
+                  <button
+                    class="btn btn-secondary w-100 prev-btn"
+                    type="button"
+                  >
+                    Previous
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button
+                    class="btn btn-secondary w-100 next-btn"
+                    type="button"
+                  >
+                    Next
+                  </button>
                 </div>
               </div>
             </fieldset>
@@ -417,24 +439,24 @@
                   required
                 ></textarea>
               </div>
-              <div class="container form-actions">
-                <div class="row align-items-center h-100">
-                  <div class="col-6">
-                    <button
-                      class="btn btn-secondary w-100 prev-btn"
-                      type="button"
-                    >
-                      Previous
-                    </button>
-                  </div>
-                  <div class="col-6">
-                    <button
-                      class="btn btn-secondary w-100 next-btn"
-                      type="button"
-                    >
-                      Next
-                    </button>
-                  </div>
+              <div
+                class="row justify-content-center align-items-center form-actions"
+              >
+                <div class="col-6">
+                  <button
+                    class="btn btn-secondary w-100 prev-btn"
+                    type="button"
+                  >
+                    Previous
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button
+                    class="btn btn-secondary w-100 next-btn"
+                    type="button"
+                  >
+                    Next
+                  </button>
                 </div>
               </div>
             </fieldset>
@@ -451,7 +473,7 @@
                   name="email"
                   required
                 />
-                <div class="form-check">
+                <div class="form-check mx-5">
                   <input
                     class="form-check-input"
                     type="checkbox"
@@ -464,21 +486,21 @@
                   </label>
                 </div>
               </div>
-              <div class="container form-actions">
-                <div class="row align-items-center h-100">
-                  <div class="col-6">
-                    <button
-                      class="btn btn-secondary w-100 prev-btn"
-                      type="button"
-                    >
-                      Previous
-                    </button>
-                  </div>
-                  <div class="col-6">
-                    <button type="submit" class="btn btn-success w-100">
-                      Submit
-                    </button>
-                  </div>
+              <div
+                class="row justify-content-center align-items-center form-actions"
+              >
+                <div class="col-6">
+                  <button
+                    class="btn btn-secondary w-100 prev-btn"
+                    type="button"
+                  >
+                    Previous
+                  </button>
+                </div>
+                <div class="col-6">
+                  <button type="submit" class="btn btn-success w-100">
+                    Submit
+                  </button>
                 </div>
               </div>
             </fieldset>
@@ -486,21 +508,42 @@
         </div>
       </section>
 
-      <section class="mb-5" id="summary">
-        <h2 class="text-center mb-4">Summary</h2>
+      <span class="scroll-helper" id="scroll-summary"></span>
 
-        <div class="container half-container" id="form-summary">
-          <p><strong>Contact reason:</strong> <span id="reason-span"></span></p>
-          <p><strong>Name:</strong> <span id="name-span"></span></p>
-          <p><strong>E-Mail:</strong> <span id="email-span"></span></p>
-          <p>
-            <em><span id="marketing-span"></span></em>
-          </p>
-          <p><strong>Message:</strong> <span id="message-span"></span></p>
+      <section class="mb-5" id="summary">
+        <div
+          class="d-flex justify-content-center align-items-center section-title"
+        >
+          <h2 class="text-center">Summary</h2>
+        </div>
+
+        <div
+          class="container reduce-container d-flex flex-column text-center"
+          id="form-summary"
+        >
+          <div>
+            <p><strong>Contact reason:</strong></p>
+            <p><span id="reason-span"></span></p>
+          </div>
+          <div>
+            <p><strong>Name:</strong></p>
+            <p><span id="name-span"></span></p>
+          </div>
+          <div>
+            <p><strong>E-Mail:</strong></p>
+            <p><span id="email-span"></span></p>
+            <p>
+              <em><span id="marketing-span"></span></em>
+            </p>
+          </div>
+          <div>
+            <p><strong>Message:</strong></p>
+            <p><span id="message-span"></span></p>
+          </div>
           <button
             type="button"
-            class="btn btn-sm btn-outline-secondary mt-3"
-            id="print-button"
+            class="btn btn-sm btn-success m-4"
+            id="save-pdf"
           >
             Save PDF
           </button>
@@ -508,14 +551,15 @@
       </section>
     </main>
 
-    <footer class="bg-dark text-secondary py-3">
-      <div class="text-center">
-        <a href="#" class="d-block">
+    <footer class="d-flex flex-column text-center">
+      <div class="py-3">
+        <a href="#">
           <img src="assets/img/top.png" alt="Arrow up to top page" />
         </a>
-        Buttermilk
-        <br />
-        &copy; 2023
+      </div>
+      <div class="d-flex flex-column bg-dark text-secondary py-3">
+        <span>Buttermilk</span>
+        <span>&copy; 2023</span>
       </div>
     </footer>
 

@@ -1,5 +1,5 @@
 // get print button and add event listener
-const printButton = document.querySelector('#print-button');
+const printButton = document.querySelector('#save-pdf');
 printButton.addEventListener('click', generatePDF);
 
 // function to generate pdf with jsPDF and html2canvas

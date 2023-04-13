@@ -12,8 +12,12 @@ h5,
 h6,
 nav,
 legend,
-footer {
+body > footer {
   font-family: 'Playfair Display', serif;
+}
+
+legend {
+  font-style: italic;
 }
 
 a {
@@ -24,7 +28,7 @@ a {
   display: none;
 }
 
-.half-container {
+.reduce-container {
   width: 50%;
 }
 
@@ -105,16 +109,9 @@ a .symbol {
   overflow: hidden;
 }
 
-.hero img {
+.hero img.logo {
   width: 600px;
   opacity: 0.75;
-}
-
-.page-title {
-  color: white;
-  font-size: 4rem;
-  font-weight: 700;
-  font-style: italic;
 }
 
 .diamond {
@@ -165,10 +162,18 @@ a .symbol {
 /* =============== <header> styles =============== */
 
 /* =============== <main> styles =============== */
-#content section h2 {
+#content > section {
+  min-height: 85vh;
+}
+
+#content > section h2 {
   font-size: 3rem;
   font-weight: 700;
   font-style: italic;
+}
+
+#content > section .section-title {
+  min-height: 20vh;
 }
 
 #content #brand p {
@@ -176,8 +181,8 @@ a .symbol {
 }
 
 #content #brand #image-container {
-  width: 250px;
-  height: 250px;
+  width: 200px;
+  height: 200px;
   margin: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -199,29 +204,13 @@ a .symbol {
   border-left: 1px solid gray;
 }
 
-#content #contact {
-  height: 85vh;
-}
-
-#content #contact .section-title {
-  height: 20vh;
-}
-
-#content #contact #wizard-form fieldset {
-  height: 60vh;
-}
-
-#content #contact #wizard-form legend {
-  font-style: italic;
-}
-
 #content #contact #wizard-form .fieldset-legend,
 #content #contact #wizard-form .form-actions {
-  height: 15vh;
+  min-height: 15vh;
 }
 
 #content #contact #wizard-form .form-input-data {
-  height: 30vh;
+  min-height: 30vh;
   border: 1px dashed rgba(128, 128, 128, 0.25);
   border-radius: 10px;
   background-image: url('../img/bg-pattern.jpg');
@@ -234,8 +223,78 @@ a .symbol {
 #content #contact #wizard-form .form-input-data .radio-options {
   font-size: 1.5em;
 }
+
+#content #summary #form-summary {
+  border: 1px dashed rgba(128, 128, 128, 0.25);
+  border-radius: 10px;
+  padding: 25px;
+}
+
+#content #summary #form-summary > div {
+  margin: 25px;
+}
+
+body > footer > div > a > img {
+  filter: grayscale(100%) brightness(0%);
+}
 /* =============== <main> styles =============== */
 /* =============== page sections styles =============== */
+
+/* =============== media queries =============== */
+@media (max-width: 384px) {
+  #content > section h2 {
+    font-size: 2rem;
+  }
+
+  #brand > div:nth-of-type(2) {
+    width: 90%;
+  }
+
+  fieldset > div:nth-of-type(2) > input,
+  fieldset > div:nth-of-type(2) > textarea {
+    width: 90% !important;
+  }
+
+  .form-input-data .radio-options {
+    font-size: 1em;
+  }
+
+  #content #summary #form-summary {
+    width: 90%;
+    padding: 10px;
+  }
+
+  #content #summary #form-summary > div {
+    margin: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  #content #contact > .container.reduce-container {
+    width: 95%;
+  }
+
+  #content > section .section-title {
+    margin: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero > div:nth-of-type(2) {
+    margin: 0 25px;
+  }
+
+  .reduce-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 992px) {
+  .reduce-container {
+    width: 75%;
+  }
+}
+/* =============== media queries =============== */
 
 /* =============== animations =============== */
 /* =============== bounce .scroll-down in header =============== */

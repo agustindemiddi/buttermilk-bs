@@ -123,5 +123,5 @@ function submitForm(event) {
     fieldsets[i].style.display = 'none';
   }
 
-  window.location.href = '#summary';
+  window.location.href = '#scroll-summary';
 }
