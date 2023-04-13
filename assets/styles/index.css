@@ -176,8 +176,22 @@ a .symbol {
   min-height: 20vh;
 }
 
+#content #brand p.highlight {
+  background-color: rgba(240, 240, 240, 0.5);
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 25px 30px 20px;
+  margin: 0 0 30px;
+}
+
 #content #brand p {
+  font-size: 1.05rem;
   text-align: justify;
+  margin: 0 75px 16px;
+}
+
+#content #brand div > p:last-of-type {
+  margin: 50px 0 50px !important;
 }
 
 #content #brand #image-container {
@@ -211,7 +225,6 @@ a .symbol {
 
 #content #team article > a.read-more,
 #content #team article > a.read-less {
-  /* display: block; */
   color: rgb(128, 128, 128);
   font-size: 0.8rem;
   margin: 0 0 16px;
@@ -224,11 +237,6 @@ a .symbol {
 #content #team article > p a {
   padding: 0;
 }
-
-/* #content #team article time {
-  padding-left: 8px;
-  border-left: 1px solid gray;
-} */
 
 #content #team article > footer > span {
   color: rgb(128, 128, 128);
@@ -293,23 +301,31 @@ body > footer > div > a > img {
     font-size: 1em;
   }
 
-  #content #summary #form-summary {
+  #form-summary {
     width: 90%;
     padding: 10px;
   }
 
-  #content #summary #form-summary > div {
+  #form-summary > div {
     margin: 10px;
   }
 }
 
 @media (max-width: 576px) {
-  #content #contact > .container.reduce-container {
+  #contact > .container.reduce-container {
     width: 95%;
   }
 
   #content > section .section-title {
     margin: 0 15px;
+  }
+
+  #brand p.highlight {
+    margin: 0 0 30px !important;
+  }
+
+  #brand p {
+    margin: 0 25px 16px !important;
   }
 }
 
@@ -320,6 +336,14 @@ body > footer > div > a > img {
 
   .reduce-container {
     width: 90%;
+  }
+
+  #brand p.highlight {
+    margin: 0 0 30px !important;
+  }
+
+  #brand p {
+    margin: 0 50px 16px !important;
   }
 }
 
