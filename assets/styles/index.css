@@ -199,6 +199,32 @@ a .symbol {
   padding-right: 5px;
 }
 
+#content #team article > p.description-text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+
+  margin-bottom: 5px;
+}
+
+#content #team article > a.read-more,
+#content #team article > a.read-less {
+  /* display: block; */
+  color: rgb(128, 128, 128);
+  font-size: 0.8rem;
+  margin: 0 0 16px;
+}
+
+#content #team article > a.read-less {
+  display: none;
+}
+
+#content #team article > p a {
+  padding: 0;
+}
+
 #content #team article time {
   padding-left: 8px;
   border-left: 1px solid gray;
