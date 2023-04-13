@@ -213,7 +213,7 @@ a .symbol {
   min-height: 30vh;
   border: 1px dashed rgba(128, 128, 128, 0.25);
   border-radius: 10px;
-  background-image: url('../img/bg-pattern.jpg');
+  background-image: url('../img/form-bg.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
