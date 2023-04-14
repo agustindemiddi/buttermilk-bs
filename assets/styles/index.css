@@ -191,16 +191,32 @@ a .symbol {
 }
 
 #content #brand div > p:last-of-type {
-  margin: 50px 0 50px !important;
+  margin: 50px 0 10px !important;
 }
 
-#content #brand #image-container {
+#content #brand #product-container {
+  min-height: 600px;
+  position: relative;
+}
+
+#content #brand .tshirt-image {
+  width: 600px;
+  height: 600px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 0;
+}
+
+#content #brand .fetched-image {
   width: 200px;
   height: 200px;
-  margin: auto;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.7;
+  z-index: 1;
 }
 
 #content #team article img.thumbnail {

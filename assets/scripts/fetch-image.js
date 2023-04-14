@@ -1,4 +1,4 @@
-const imageContainer = document.querySelector('#image-container');
+const productContainer = document.querySelector('#product-container');
 
 const getImage = async () => {
   const random = Math.floor(Math.random() * 649) + 1;
@@ -6,7 +6,10 @@ const getImage = async () => {
     `https://unpkg.com/pokeapi-sprites@2.0.2/sprites/pokemon/other/dream-world/${random}.svg`
   )
     .then((res) => {
-      imageContainer.style.backgroundImage = `url(${res.url})`;
+      const fetchedImage = document.createElement('img');
+      fetchedImage.src = res.url;
+      fetchedImage.classList = 'fetched-image';
+      productContainer.append(fetchedImage);
     })
     .catch((error) => {
       console.log(error);
