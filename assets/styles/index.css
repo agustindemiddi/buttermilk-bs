@@ -259,7 +259,11 @@ a .symbol {
   padding: 0;
 }
 
-#content #team article > footer > span {
+#content #team article > footer > span.name {
+  color: rgb(13, 110, 253);
+}
+
+#content #team article > footer > span.role {
   color: rgb(128, 128, 128);
   font-size: 0.9rem;
   font-style: italic;
@@ -304,13 +308,18 @@ body > footer > div > a > img {
 /* =============== page sections styles =============== */
 
 /* =============== media queries =============== */
-@media (max-width: 992px) {
+@media (max-width: 1200px) {
   .reduce-container {
-    width: 75%;
+    width: 60%;
   }
 
   #brand p.no-highlight {
-    margin: 0 60px 16px !important;
+    margin: 0 50px 16px !important;
+  }
+}
+@media (max-width: 992px) {
+  .reduce-container {
+    width: 75%;
   }
 
   #content #brand .joker {
@@ -326,7 +335,7 @@ body > footer > div > a > img {
   }
 
   .reduce-container {
-    width: 90%;
+    width: 85%;
   }
 
   #brand p.no-highlight {
@@ -353,9 +362,9 @@ body > footer > div > a > img {
     font-size: 2rem;
   }
 
-  #brand > div:nth-of-type(2) {
+  /* #brand > div:nth-of-type(2) {
     width: 90%;
-  }
+  } */
 
   #brand p.no-highlight {
     margin: 0 20px 16px !important;
