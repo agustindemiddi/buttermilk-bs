@@ -180,14 +180,20 @@ a .symbol {
   background-color: rgba(240, 240, 240, 0.5);
   border-radius: 10px;
   font-size: 1.2rem;
-  padding: 25px 30px 20px;
+  padding: 25px 30px 25px;
   margin: 0 0 30px;
 }
 
-#content #brand p {
+#content #brand p.no-highlight {
   font-size: 1.05rem;
   text-align: justify;
   margin: 0 75px 16px;
+}
+
+#content #brand .joker {
+  width: 360px;
+  border-radius: 8px;
+  margin-bottom: 10px;
 }
 
 #content #brand #magic-button-container {
@@ -235,7 +241,6 @@ a .symbol {
   display: -webkit-box;
   -webkit-line-clamp: 5;
   -webkit-box-orient: vertical;
-
   margin-bottom: 5px;
 }
 
@@ -299,6 +304,50 @@ body > footer > div > a > img {
 /* =============== page sections styles =============== */
 
 /* =============== media queries =============== */
+@media (max-width: 992px) {
+  .reduce-container {
+    width: 75%;
+  }
+
+  #brand p.no-highlight {
+    margin: 0 60px 16px !important;
+  }
+
+  #content #brand .joker {
+    width: 360px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero > div:nth-of-type(2) {
+    margin: 0 25px;
+  }
+
+  .reduce-container {
+    width: 90%;
+  }
+
+  #brand p.no-highlight {
+    margin: 0 40px 16px !important;
+  }
+}
+
+@media (max-width: 576px) {
+  #contact > .container.reduce-container {
+    width: 95%;
+  }
+
+  #content > section .section-title {
+    margin: 0 15px;
+  }
+
+  #brand p.no-highlight {
+    margin: 0 30px 16px !important;
+  }
+}
+
 @media (max-width: 384px) {
   #content > section h2 {
     font-size: 2rem;
@@ -306,6 +355,10 @@ body > footer > div > a > img {
 
   #brand > div:nth-of-type(2) {
     width: 90%;
+  }
+
+  #brand p.no-highlight {
+    margin: 0 20px 16px !important;
   }
 
   fieldset > div:nth-of-type(2) > input,
@@ -324,48 +377,6 @@ body > footer > div > a > img {
 
   #form-summary > div {
     margin: 10px;
-  }
-}
-
-@media (max-width: 576px) {
-  #contact > .container.reduce-container {
-    width: 95%;
-  }
-
-  #content > section .section-title {
-    margin: 0 15px;
-  }
-
-  #brand p.highlight {
-    margin: 0 0 30px !important;
-  }
-
-  #brand p {
-    margin: 0 25px 16px !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .hero > div:nth-of-type(2) {
-    margin: 0 25px;
-  }
-
-  .reduce-container {
-    width: 90%;
-  }
-
-  #brand p.highlight {
-    margin: 0 0 30px !important;
-  }
-
-  #brand p {
-    margin: 0 50px 16px !important;
-  }
-}
-
-@media (max-width: 992px) {
-  .reduce-container {
-    width: 75%;
   }
 }
 /* =============== media queries =============== */
