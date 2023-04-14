@@ -260,22 +260,24 @@ a .symbol {
 }
 
 #content #team article a {
-  padding-left: 7px;
-  padding-right: 7px;
+  padding: 0 10px;
 }
 
 #content #team article > footer > span.name {
   color: rgb(13, 110, 253);
-  padding-left: 7px;
-  padding-right: 7px;
+  padding: 0 10px;
 }
 
-#content #team article > footer > span.role {
+#content #team article > footer > div {
+  padding-left: 10px;
+  border-left: 1px solid rgb(128, 128, 128);
+}
+
+#content #team article > footer > div > span.role {
   color: rgb(128, 128, 128);
   font-size: 0.9rem;
   font-style: italic;
-  padding-left: 10px;
-  border-left: 1px solid gray;
+  
 }
 
 #content #contact #wizard-form .fieldset-legend,
