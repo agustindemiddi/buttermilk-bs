@@ -1,3 +1,4 @@
+const magicButton = document.querySelector('#magic-button');
 const productContainer = document.querySelector('#product-container');
 
 const getImage = async () => {
@@ -9,6 +10,12 @@ const getImage = async () => {
       const fetchedImage = document.createElement('img');
       fetchedImage.src = res.url;
       fetchedImage.classList = 'fetched-image';
+
+      const previousImage = productContainer.querySelector('.fetched-image');
+      if (previousImage) {
+        previousImage.remove();
+      }
+
       productContainer.append(fetchedImage);
     })
     .catch((error) => {
@@ -16,4 +23,4 @@ const getImage = async () => {
     });
 };
 
-getImage();
+magicButton.addEventListener('click', getImage);

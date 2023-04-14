@@ -190,8 +190,8 @@ a .symbol {
   margin: 0 75px 16px;
 }
 
-#content #brand div > p:last-of-type {
-  margin: 50px 0 10px !important;
+#content #brand #magic-button-container {
+  margin: 50px 0 25px !important;
 }
 
 #content #brand #product-container {
@@ -203,7 +203,7 @@ a .symbol {
   width: 600px;
   height: 600px;
   position: absolute;
-  left: 50%;
+  left: 49%;
   transform: translateX(-50%);
   z-index: 0;
 }
