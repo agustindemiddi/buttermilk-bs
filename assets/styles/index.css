@@ -225,16 +225,6 @@ a .symbol {
   z-index: 1;
 }
 
-#content #team article img.thumbnail {
-  width: 24px;
-  height: 24px;
-}
-
-#content #team article a {
-  padding-left: 3px;
-  padding-right: 5px;
-}
-
 #content #team article > p.description-text {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -259,8 +249,25 @@ a .symbol {
   padding: 0;
 }
 
+#content #team article img.thumbnail {
+  width: 24px;
+  height: 24px;
+}
+
+#content #team article img.thumbnail:hover {
+  transform: scale(1.2);
+  transition: transform 0.1s linear;
+}
+
+#content #team article a {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
 #content #team article > footer > span.name {
   color: rgb(13, 110, 253);
+  padding-left: 7px;
+  padding-right: 7px;
 }
 
 #content #team article > footer > span.role {
