@@ -587,42 +587,43 @@
           <h2 class="text-center">Summary</h2>
         </div>
 
-        <div
-          class="container reduce-container d-flex flex-column text-center"
-          id="form-summary"
-        >
-          <div>
-            <p><strong>Contact reason:</strong></p>
-            <p><span id="reason-span"></span></p>
-          </div>
-          <div>
-            <p><strong>Name:</strong></p>
-            <p><span id="name-span"></span></p>
-          </div>
-          <div>
-            <p><strong>E-Mail:</strong></p>
-            <p><span id="email-span"></span></p>
-            <p>
-              <em><span id="marketing-span"></span></em>
-            </p>
-          </div>
-          <div>
-            <p><strong>Message:</strong></p>
-            <p><span id="message-span"></span></p>
-          </div>
-          <div class="d-flex flex-column text-center">
-            <p style="font-size: 2rem;"><strong>Discount QR:</strong></p>
-            <div class="d-flex justify-content-center">
-              <div id="qrcode"></div>
-            </div>
-          </div>
-          <button
-            type="button"
-            class="btn btn-sm btn-success m-4"
-            id="save-pdf"
+        <div class="container reduce-container summary-canvas">
+          <div
+            class="d-flex flex-column text-center summary-container"
           >
-            Save PDF
-          </button>
+            <div>
+              <p><strong>Contact reason:</strong></p>
+              <p><span id="reason-span"></span></p>
+            </div>
+            <div>
+              <p><strong>Name:</strong></p>
+              <p><span id="name-span"></span></p>
+            </div>
+            <div>
+              <p><strong>E-Mail:</strong></p>
+              <p><span id="email-span"></span></p>
+              <p>
+                <em><span id="marketing-span"></span></em>
+              </p>
+            </div>
+            <div>
+              <p><strong>Message:</strong></p>
+              <p><span id="message-span"></span></p>
+            </div>
+            <div class="d-flex flex-column text-center">
+              <p style="font-size: 2rem"><strong>Discount QR:</strong></p>
+              <div class="d-flex justify-content-center mb-5">
+                <div id="qrcode"></div>
+              </div>
+            </div>
+            <button
+              type="button"
+              class="btn btn-sm btn-success m-4"
+              id="save-pdf"
+            >
+              Save PDF
+            </button>
+          </div>
         </div>
       </section>
     </main>

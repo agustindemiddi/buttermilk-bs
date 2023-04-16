@@ -112,7 +112,9 @@ function submitForm(event) {
     : `(won't receive marketing notifications)`;
   messageSpan.innerText = clientData.message;
 
-  new QRCode(document.getElementById('qrcode'), {
+  const qrDiv = document.querySelector('#qrcode');
+  qrDiv.innerHTML = '';
+  new QRCode(qrDiv, {
     text: 'https://agustindemiddi.github.io/buttermilk/discount',
     width: 256,
     height: 256,

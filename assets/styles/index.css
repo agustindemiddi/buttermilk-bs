@@ -299,14 +299,21 @@ a .symbol {
   font-size: 1.5em;
 }
 
-#content #summary #form-summary {
+#content #summary .summary-container {
   border: 1px dashed rgba(128, 128, 128, 0.25);
   border-radius: 10px;
-  padding: 25px;
 }
 
-#content #summary #form-summary > div {
-  margin: 25px;
+#content #summary .summary-container > div {
+  margin: 12px;
+}
+
+#content #summary .summary-container > div > p {
+  margin-bottom: 12px;
+}
+
+.pdf-style {
+  padding: 64px 128px 0;
 }
 
 body > footer > div > a > img {
@@ -387,12 +394,12 @@ body > footer > div > a > img {
     font-size: 1em;
   }
 
-  #form-summary {
+  .summary-container {
     width: 90%;
     padding: 10px;
   }
 
-  #form-summary > div {
+  .summary-container > div {
     margin: 10px;
   }
 }
