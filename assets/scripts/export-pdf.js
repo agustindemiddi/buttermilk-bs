@@ -1,5 +1,6 @@
 // get canvas, printButton and add event listener
 const summaryCanvas = document.querySelector('.summary-canvas');
+const brandTitle = document.querySelector('.brand-title');
 const printButton = document.querySelector('#save-pdf');
 printButton.addEventListener('click', generatePDF);
 
@@ -18,7 +19,8 @@ async function generatePDF() {
   ctx.fillStyle = 'white';
   ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-  // hide printButton
+  // show brandTitle and hide printButton
+  brandTitle.style.display = 'block';
   printButton.style.display = 'none';
 
   html2canvas(summaryCanvas, {
@@ -38,7 +40,8 @@ async function generatePDF() {
     pdf.save('contact-summary.pdf');
   });
 
-  // restore printButton visibility and canvas style
-  printButton.style.display = 'inline';
+  // restore canvas style and brandTitle and printButton visibility
   summaryCanvas.classList.remove('pdf-style');
+  brandTitle.style.display = 'none';
+  printButton.style.display = 'block';
 }

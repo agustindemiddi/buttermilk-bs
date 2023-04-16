@@ -47,6 +47,12 @@ textarea.is-invalid {
 }
 /* =============== general styles and helpers =============== */
 
+/* =============== local fonts =============== */
+@font-face {
+  font-family: 'backpack';
+  src: url('../fonts/Backpack.ttf') format('truetype');
+}
+
 /* =============== page icons resources =============== */
 /* =============== casper icons font =============== */
 @font-face {
@@ -85,6 +91,7 @@ a .symbol {
 /* =============== custom =============== */
 /* =============== mono social icons font =============== */
 /* =============== page icons resources =============== */
+/* =============== local fonts =============== */
 
 /* =============== page sections styles =============== */
 /* =============== <header> styles =============== */
@@ -299,6 +306,13 @@ a .symbol {
   font-size: 1.5em;
 }
 
+#content #summary .brand-title {
+  font-family: 'backpack';
+  font-size: 5rem;
+  opacity: 85%;
+  display: none;
+}
+
 #content #summary .summary-container {
   border: 1px dashed rgba(128, 128, 128, 0.25);
   border-radius: 10px;
@@ -376,10 +390,6 @@ body > footer > div > a > img {
   #content > section h2 {
     font-size: 2rem;
   }
-
-  /* #brand > div:nth-of-type(2) {
-    width: 90%;
-  } */
 
   #brand p.no-highlight {
     margin: 0 20px 16px !important;
