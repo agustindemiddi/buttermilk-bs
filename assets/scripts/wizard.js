@@ -107,10 +107,16 @@ function submitForm(event) {
   reasonSpan.innerText = reasonSpanInnerTextHelper;
   nameSpan.innerText = clientData.name;
   emailSpan.innerText = clientData.email;
-  messageSpan.innerText = clientData.message;
   marketingSpan.innerText = clientData.clientAcceptsMarketing
     ? '(will receive discounts and offers)'
     : `(won't receive marketing notifications)`;
+  messageSpan.innerText = clientData.message;
+
+  new QRCode(document.getElementById('qrcode'), {
+    text: 'https://agustindemiddi.github.io/buttermilk/discount',
+    width: 256,
+    height: 256,
+  });
 
   form.name.value = '';
   document.querySelector('input[name="reason"]:checked').checked = false;
