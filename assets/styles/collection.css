@@ -1,0 +1,12 @@
+.arrow-btn {
+  font-size: 1.5rem;
+  border: none;
+}
+
+.collection-img {
+  width: 600px;
+}
+
+.back {
+  box-shadow: 5px 5px 10px 2px rgba(0, 0, 0, 0.1);
+}
